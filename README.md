@@ -14,7 +14,7 @@ To generate a dictionary file, you'll need to run the genMarkovDict.py script as
 <BR><code>python genMarkovDict.py -k (the order of the markov chain; i.e. do you generate one word at a time or pairs of words) -i (input file with wild card) -d (output dictionary file) </code>
 
 For example, the following generates a dictionary of order 2 where the text was generated using two words at a time:
-<BR><code>python genMarkovDict.py -k 2 -i "Data - Obama\*.*" -d homerdict.txt </code>
+<BR><code>python genMarkovDict.py -k 2 -i "Data - Oddysey\*.*" -d homerdict.txt </code>
 
 <H1> Generating Text </H1>
 To generate the actual text, you'll need to run the genMarkovText.py script as follows:
