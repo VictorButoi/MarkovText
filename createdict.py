@@ -34,33 +34,6 @@ def checkargs():
 		genNSentences = int(arg[ '-n' ])
 		print(arg['-f'])
 
-
-
-#Read a westwing script which has a character name in CAPS and then the text below with a line break afterwards
-def readWestWingFile(filename,  fileEncoding="utf-8"):
-	prevword = "";
-	fullline = ""
-
-	with  open(filename, "r", encoding=fileEncoding) as file:
-		bartletLineActive = False
-		# strData = str(file)
-		# file = strData.decode("utf-8")
-
-		for line in file:
-			if not line.strip():
-				bartletLineActive = False
-				if fullline:
-					processSection( re.sub(r"\[.+\]","",fullline ) )
-					fullline = ""
-				continue
-			elif "BARTLET" in line: 
-				bartletLineActive = True
-				fullline = ""
-			elif bartletLineActive:
-				fullline = fullline + " " + line.strip()
-		if fullline:
-			processSection( re.sub(r"\[.+\]","",fullline ) )
-
 #Text is just the one person
 def readGenericFile(filename, fileEncoding="utf-8"):
 	with  open(filename, "r", encoding=fileEncoding) as file:
