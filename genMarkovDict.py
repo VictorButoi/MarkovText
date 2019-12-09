@@ -38,10 +38,8 @@ def main():
 
 	(keyLen, fileList, dictFile) = checkargs()
 
-	#Create new Markov class
 	markovObj = markov.Markov(keyLen)
 
-	# print(fileList)
 	for file in fileList:	
 		try:
 			markovObj.readFile(file, "utf-8")
