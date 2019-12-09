@@ -24,5 +24,6 @@ To generate the actual text, you'll need to run the genMarkovText.py script as f
 For example, the following creates 5 generated text sentences with each one having a maximum of 20 words (if the end of sentence is found, then it will only go up to that last word)
 <BR><code>python genMarkovText.py -w 20 -n 5 -d homerdict.txt </code>
   
-Special thanks to Pubs Abayasiri for open sourcing their code and making this as easy as possible!
+<H1> Credits </H1>
+Special thanks to Pubs Abayasiri for open sourcing their code and making this as easy as possible! Also thank you to MIT for having an online resource with the entire Homer series that required only specific preprocessing.
 
