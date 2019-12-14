@@ -1,1 +1,10 @@
-{}
+{'#BEGIN#': [['Metamorphoses']],
+ ('Homeric',): ['Hymns'],
+ ('Hymns',): ['The'],
+ ('Illiad',): ['Theogany'],
+ ('Metamorphoses',): ['The'],
+ ('Oddysey',): ['The'],
+ ('The',): ['Homeric', 'Oddysey', 'Illiad'],
+ ('Theogany',): ['Works'],
+ ('Works',): ['and'],
+ ('and',): ['Days']}
